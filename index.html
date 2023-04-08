@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Graphs</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <div class="input-group">
+          <label for="input-value">Input Value:</label>
+          <input type="number" id="input-value">
+        </div>
+        <div class="input-group">
+          <label for="max-value">Max Value:</label>
+          <input type="number" id="max-value">
+        </div>
+        <button id="plot-btn">Plot Graphs</button>
+      </div>
+      <div class="graph-container",>
+        <div class="graph-group">
+          <div class="graph-title">Vertical Bar Graph</div>
+          <div id="graph1" class="graph"></div>
+          <div class="graph-percentage" id="graph1-percentage"></div>
+        </div>
+        <div class="graph-group">
+          <div class="graph-title">Pie Chart</div>
+          <canvas id="graph2" class="graph"></canvas>
+          <div class="graph-percentage" id="graph2-percentage"></div>
+        </div>
+        <div class="graph-group">
+          <div class="graph-title">Gradient in Vertical Bar Graph</div>
+          <div id="graph3" class="graph"></div>
+          <div class="graph-percentage" id="graph3-percentage"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
